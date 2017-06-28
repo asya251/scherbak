@@ -1,0 +1,52 @@
+html{
+    padding: 0;
+    margin: 0;
+    min-height: 100%}
+.bord {position: relative;
+    width: 50%;
+    margin: 0 auto;
+    background: url("yablonya_svetlyj.jpg");
+    background-size: 100%;
+box-shadow:  0 0 24px 0 rgba(102, 74, 102, 0.83);}
+.bord:before{
+    content: '';
+    display: block;
+    padding-top: 100%;}
+.container{
+    border: 4px solid #000021;
+    position: absolute;
+    font-size:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    box-sizing: border-box;
+    margin: 3%;
+}
+.cell{position: relative;
+    width: 12.5%;
+    background: #173439;
+    display: inline-block;
+       }
+.cell:before{
+    content: '';
+    padding-top: 100%;
+    display: block;}
+
+.line:nth-child(2n+1) .cell{
+    margin-right: 12.5%;}
+.line:nth-child(2n) .cell{
+    margin-left: 12.5%;}
+.line:nth-child(1) .cell:before,
+.line:nth-child(2) .cell:before,
+.line:nth-child(3) .cell:before {
+    border-radius: 50%;
+   background: #ad9dff;
+}
+.line:nth-child(6) .cell:before,
+.line:nth-child(7) .cell:before,
+.line:nth-child(8) .cell:before {
+    border-radius: 50%;
+    background: #960fff;
+    content: '';
+}
