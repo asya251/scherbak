@@ -1,0 +1,132 @@
+html{
+    min-height:600px;
+    /*max-width:800px;*/
+}
+body{
+    background: url("image/mainbg.jpg") no-repeat;
+    background-size: 100%; /*почему не совпал фон с макетом*/
+
+}
+.card{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 10.5% auto;
+    background:#152335;
+    width: 67.5%;
+    height: 74.5%;
+    box-sizing: border-box;
+    border-radius: 2.5% ;
+    box-shadow: 0 0 7em rgba(0,0,0,0.8) ;
+    /*z-index: 2;*/
+}
+
+.card__inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*z-index: 2;*/
+}
+.card__inner:after{
+    content: '';
+    background: url(image/logoDark.png) no-repeat;
+    background-size: 45%;
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+}
+.card__picture{
+    float: left;
+    height: 100%;
+    width:60%;
+    margin: 0;
+}
+.card__picture-product{
+    margin: 10% auto 0;
+    height: 70%;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 20% 0 2.5%;
+    text-align: center;
+}
+.card__picture-product-main:before{
+    content: '';
+    display: block;
+    padding-top: 100%;}
+.card__picture-colors{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin-top:9%;
+}
+
+.card__picture-color{
+    display: inline-block;
+    border-radius: 50%;
+    border: inherit;
+    width: 2.5%;
+    height: 20%;
+    margin: .5%;
+}
+.card__picture-color--black{
+        border: 1px solid #858C9B;
+        background: #29334E;
+}
+.card__picture-color--red{
+    background:#F54E40;
+}
+.card__picture-color--white{
+    background:white;
+}
+.card__picture-color--blue{
+    background:#1DE8F3;
+}
+.card__info{
+    display: inline-block;
+    padding:2em;
+    font-family: Arial, sans-serif;
+font-weight: 200}
+.card__info-title{color:#8C9096;
+    font-size: 24px;
+    padding-top: .88em;
+    line-height:24px;
+    margin:  0.7em 0;
+}
+.card__info-opis{ color:#8C9096;
+    font-size: 14px;
+    margin:  0;}
+.card__info-rating{ display: inline-block;
+    /*padding: 1.5em 0;*/
+    /*margin: 1.5em 0;*/
+    font-size: 0;
+}
+.card__info-rating-stars{
+    padding: 1.5em 0;}
+.card__info-rating-stars--grey{opacity: 0.3
+}
+.card__info-size-BT,
+.card__info-qty-BT {color: #8C9096;
+    border: 1px solid #8C9096;
+    font-size: 14px;
+    padding: 3.7% 6.2% ;
+    display: inline-block;
+  }
+.card__info-size-BT:after{
+    content:  url(image/galka.png);
+}
+.card__info-qty-BT:after{content:   url(image/galka.png);}
+.card__info-add{background: #2A3544;
+    display: inline-block;
+    color: #8C9096;
+    border: 1px solid #8C9096;
+    font-size: 14px;
+    margin-top: 15%;
+    width:50%;
+    padding: 6.5% 25%;
+    text-align: center;
+    /*line-height:14px;*/
+}
