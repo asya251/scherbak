@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CSource+Sans+Pro:300');
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.secInner {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header {
+  min-height: 100vh;
+  background: url("../images/headerBg.jpg") center 100%, #1f1e24;
+  padding-top: 47px;
+  color: #fff;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  .logo {
+    float: left;
+    &:hover {
+      transform: scale(1.1, 1.1);
+      transition: transform .3s ease-Out;
+      -moz-transition: transform .3s ease-Out;
+      -webkit-transition: transform .3s ease-Out;
+      -o-transition: transform .3s ease-Out;
+      cursor: pointer;
+    }
+  }
+  .m-nav {
+    float: right;
+    width: 30%;
+    &-ol {
+      list-style: none;
+      font-size: 0;
+      width: 100%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    &-li {
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font: 400 16px/0.75 'Open Sans', arial, sans-serif;
+        &:hover {
+          color: #b3b3b3
+        }
+      }
+    }
+  }
+  h1 {
+    clear: both;
+    margin-top: 295px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font:300 35px/2 'Source Sans Pro', arial, sans-serif;
+  }
+  h1, p {
+    text-align: center;
+    padding: 0 10px;
+  }
+  p {
+    margin-top: 44px;
+    margin-bottom: 0;
+    font: 400 16px/1.75 'Open Sans', arial, sans-serif;
+    letter-spacing: 0.05em
+  }
+  .svgInner {
+    display: block;
+    margin-top: 172px;
+    //margin-bottom: 76px;
+    text-align: center;
+    svg:hover {
+      cursor: pointer;
+      .cls-33 {
+        fill: #107c6a;
+      }
+    }
+  }
+}
+main {
+  h2 {
+    margin: 0 auto 40px;
+    padding: 80px 0 0;
+    text-transform: uppercase;
+    font: 300 20px/0.6 'Source Sans Pro', arial, sans-serif;
+    letter-spacing: 0.2em;
+    color: #333b46;
+    text-align: center;
+  }
+  p {
+    font: 400 14px/1.78 'Open Sans', arial, sans-serif;
+    letter-spacing: 0.05em;
+    color: #81868e;
+    text-align: center;
+    margin: 0 0 60px;
+    padding: 0;
+  }
+  .button-group {
+    text-align: center;
+    margin-top: 20px;
+    button {
+      padding: 0 12px;
+      border: inherit;
+      background: inherit;
+      font: 400 16px/0.75 'Open Sans', arial, sans-serif;
+      color: #464646;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        cursor: pointer;
+        color: #6a6a6a;
+        transition: transform 3s ease-Out;
+      }
+      &.is-checked {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: '';
+          display: block;
+          border-bottom: 2px solid #19bd9a;
+          top: 15px;
+          left: 1px;
+          width: 38px;
+          height: 15px;
+        }
+      }
+    }
+  }
+//восновном для .slider1
+  .slid1,
+  .slid2,
+  .slid3 {
+    padding: 0 70px 50px;
+    img {
+      float: left;
+    }
+    &-article {
+      float: right;
+      width: 50%;
+      padding-right: 47px;
+      &-fio {
+        color: #464646;
+        font-size: 20px;
+        letter-spacing: 0.04em;
+        padding: 30px 0 15px;
+        &:hover {
+          color: #202020;
+        }
+      }
+      &-post {
+        font: 300 14px/1.785 'Source Sans Pro', arial, sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+      &-text {
+        padding-top: 30px;
+      }
+      p {
+        text-align: right;
+        margin: 0;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+    &:hover {
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+    }
+  }
+
+  .secContactUsModal {
+    background: url("../images/secBlackWhite.jpg") center 100%, #000;
+    padding: 60px 0 57px;
+    text-align: center;
+    h3, button {
+      color: #fff;
+      font: 400 20px/1.25 'Open Sans', arial, sans-serif;
+      margin: 0;
+    }
+    h3 {
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+    button {
+      margin: 33px auto 0;
+      font-size: 16px;
+      line-height: 12px;
+      padding: 12px 33px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border-radius: 33px;
+      border-style: solid;
+      background: none;
+      &:hover {
+        background: #000;
+        color: #cccccc;
+        border-color: #cccccc;
+        cursor: pointer;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+//восновном для .slider1
+  .slick-dots {
+    padding: 0;
+    margin: 0 0 100px;
+    //list-style-type: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      //list-style-type: none;
+      &.slick-active button {
+        background: #19bd9a;
+      }
+      button {
+        font-size: 0;
+        background: #fff;
+        border-radius: 50%;
+        border: 1px solid #19bd9a;
+        margin: 0 5px;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+
+      }
+    }
+  }
+/* FOR Isotope*/
+.grid {
+    padding: 75px 25px 95px;
+    text-align: center;
+    &-item {
+      padding: 5px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    img:hover {
+      opacity: 0.7;
+    }
+  }
+
+.sec {
+    &-portfolio,
+    &-testimonials,
+    &-ContactUsMap{
+      background: #f3f3f3;
+    }
+    &-testimonials {
+      padding-bottom: 100px;
+    }
+    &-ContactUsMap {
+      h2 {
+        padding-top: 77px;
+      }
+      p {
+        margin-bottom: 71px;
+      }
+      &-map {
+        height: 439px;
+      }
+  }
+}
+.slider2 {
+  img{
+    padding-left: 47px;
+  }
+  .slid1,
+  .slid2,
+  .slid3 {
+    background: #ffffff;
+    position: relative;
+    padding: 52px 48px 118px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    &-article {
+      float: left;
+      width: 80%;
+      padding-left: 69px;
+      padding-right: 0; /*без переопредления ширина считается не от полной*/
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      &-fio {
+        color: #19bd9a;
+        font-size: 16px; /*open sans bolt 16:20 */
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        //padding: 30px 0 15px;
+        &:hover {
+          color: #12876e;
+        }
+      }
+      &-post {
+        //font: 300 14px/20px 'Open Sans', arial, sans-serif; ЗДЕСЬ ОСТАНОВИЛАСЬ!!!!!!!!!
+        letter-spacing: 0.04em;
+        font-size: 14px;
+        line-height: 20px;
+        font-style: normal;
+        color: #464646;
+      }
+      &-text {
+        padding-top: 10px;
+        font: 400 16px/1.75 'Open Sans', arial, sans-serif;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      p {
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+  .slick-dots {
+      position: absolute;
+      bottom: 70px;
+      left: 50%;
+      margin: 0 ;
+    margin-left: -30px;
+
+    }
+}
+.gmnoprint {
+  display: none;
+}
+footer {
+  padding: 72px 0 69px;
+  margin: 0 auto;
+  text-align: center;
+  font: 400 14px/1.78 'Open Sans', arial, sans-serif;
+  letter-spacing: 0.05em;
+  color: #81868e;
+  p {
+    padding: 25px 0 35px;
+    margin: 0;
+  }
+  //svg:first-child {
+  //  &:hover {
+  //      opacity: 0.7
+  //    }
+  //  }
+}
+.svgInner {
+  line-height: 26px;
+  .soc1w,
+  .soc2w,
+  .soc3w,
+  .soc4w,
+  .soc5w {
+    width: 26px;
+    margin: 0 2.5px 0;
+  }
+}
